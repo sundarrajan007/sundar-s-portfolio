@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import { motion } from 'framer-motion'
 import { Home, User, Briefcase, Layers, Globe, BookOpen, MessageCircle } from 'lucide-react'
+import StarBorder from './ui/StarBorder';
 
 const Dock = () => {
   const [activeItem, setActiveItem] = useState('home')
@@ -28,8 +29,11 @@ const Dock = () => {
 
   return (
     <div className="fixed bottom-6 left-1/2 transform -translate-x-1/2 z-50">
+      <div className="absolute inset-0 w-full h-full pointer-events-none z-0">
+        <StarBorder />
+      </div>
       <motion.div 
-        className="flex items-center gap-2 px-4 py-3 bg-white/80 dark:bg-black/20 backdrop-blur-md rounded-full border border-white/10 shadow-2xl"
+        className="flex items-center gap-2 px-4 py-3 bg-white/80 dark:bg-black/20 backdrop-blur-md rounded-full border border-white/10 shadow-2xl relative z-10"
         initial={{ opacity: 0, y: 20 }}
         animate={{ opacity: 1, y: 0 }}
         transition={{ duration: 0.5 }}

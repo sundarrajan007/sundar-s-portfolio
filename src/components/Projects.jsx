@@ -6,17 +6,17 @@ import ScrollFloat from './ScrollFloat';
 const PROJECTS = [
     {
       id: 1,
-    title: "Portfolio Website",
-    description: "A personal portfolio website to showcase my projects, skills, and experience with modern animations and responsive design.",
+    title: "Gym Web Application",
+    description: "A frontend fitness tracking app to showcase workout plans, progress charts, and user goals with modern animations and responsive design.",
     tags: ["React", "CSS", "JavaScript", "Responsive"],
     icon: Code,
     category: "Frontend",
     },
     {
       id: 2,
-    title: "Food Delivery UI/UX",
-    description: "A user-friendly food delivery app UI/UX design using Figma, focusing on intuitive navigation and accessibility.",
-    tags: ["Figma", "UI/UX", "Prototyping"],
+    title: "Watch Website",
+    description: "A stylish and modern watch website to showcase premium timepieces with sleek animations, elegant UI, and fully responsive design.",
+    tags: ["React", "Tailwind CSS", "Responsive"],
     icon: Palette,
     category: "Design",
     },

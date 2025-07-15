@@ -98,7 +98,7 @@ const Skills = () => {
   }
 
   return (
-    <section id="skills" className="section-padding bg-transparent">
+    <section id="skills" className="py-20 bg-transparent min-h-screen">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         {/* Section Header */}
         <motion.div

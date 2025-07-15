@@ -11,7 +11,7 @@ import RotatingText from './RotatingText'
 
 const Hero = () => {
   const [currentTitle, setCurrentTitle] = useState(0)
-  const titles = ['Frontend Developer', 'UI Enthusiast', 'Problem Solver', 'Creative Thinker']
+  const titles = ['Full Stack Developer', 'UI Enthusiast', 'Problem Solver', 'Creative Thinker']
 
   useEffect(() => {
     const interval = setInterval(() => {
