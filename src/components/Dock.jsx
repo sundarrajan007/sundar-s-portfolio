@@ -9,8 +9,8 @@ const Dock = () => {
   const dockItems = [
     { id: 'home', icon: Home, label: 'Home', href: '#hero' },
     { id: 'about', icon: User, label: 'About', href: '#about' },
-    { id: 'projects', icon: Briefcase, label: 'Projects', href: '#projects' },
     { id: 'skills', icon: Layers, label: 'Skills', href: '#skills' },
+    { id: 'projects', icon: Briefcase, label: 'Projects', href: '#projects' },
     { id: 'experience', icon: Globe, label: 'Experience', href: '#experience' },
     { id: 'certifications', icon: BookOpen, label: 'Certifications', href: '#certifications' },
     { id: 'contact', icon: MessageCircle, label: 'Contact', href: '#contact' }

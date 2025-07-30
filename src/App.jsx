@@ -17,6 +17,7 @@ import Dock from './components/Dock'
 import ShapeBlur from './components/ShapeBlur'
 import Navbar from './components/Navbar'
 import ScrollStack from './components/ui/ScrollStack';
+import PixelTransition from './components/ui/PixelTransition';
 
 function App() {
   const [showEasterEgg, setShowEasterEgg] = useState(false)
@@ -53,13 +54,27 @@ function App() {
       <main className="relative z-10">
         <ScrollStack>
           <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-          <Hero />
-          <About />
-          <Skills />
-          <Projects />
-          <Experience />
-          <Certifications />
-          <Contact />
+          <PixelTransition>
+            <Hero />
+          </PixelTransition>
+          <PixelTransition>
+            <About />
+          </PixelTransition>
+          <PixelTransition>
+            <Skills />
+          </PixelTransition>
+          <PixelTransition>
+            <Projects />
+          </PixelTransition>
+          <PixelTransition>
+            <Experience />
+          </PixelTransition>
+          <PixelTransition>
+            <Certifications />
+          </PixelTransition>
+          <PixelTransition>
+            <Contact />
+          </PixelTransition>
         </ScrollStack>
       </main>
       {/* Footer */}

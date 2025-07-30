@@ -14,11 +14,12 @@ const PROJECTS = [
     },
     {
       id: 2,
-    title: "Watch Website",
-    description: "A stylish and modern watch website to showcase premium timepieces with sleek animations, elegant UI, and fully responsive design.",
-    tags: ["React", "Tailwind CSS", "Responsive"],
+    title: "Food App",
+    description: "A modern food delivery and restaurant discovery app with real-time tracking, menu management, and seamless user experience.",
+    tags: ["Figma"],
     icon: Palette,
     category: "Design",
+    showGitHub: false,
     },
     {
       id: 3,
@@ -28,9 +29,17 @@ const PROJECTS = [
     icon: Smartphone,
     category: "Frontend",
   },
+  {
+    id: 4,
+    title: "Event Management",
+    description: "A comprehensive event management platform with user registration, event scheduling, real-time updates, and administrative controls for seamless event coordination.",
+    tags: ["React", "MongoDB", "Node.js"],
+    icon: Code,
+    category: "Full Stack",
+  },
 ];
 
-const CATEGORIES = ["All", "Frontend", "Design"];
+const CATEGORIES = ["All", "Frontend", "Design", "Full Stack"];
 
 export default function Projects() {
   const [activeCategory, setActiveCategory] = useState("All");
@@ -96,6 +105,7 @@ export default function Projects() {
                   <h3 className="text-xl font-bold text-white mb-4 text-center">{project.title}</h3>
                   <p className="text-white text-center mb-6">{project.description}</p>
                   <div className="flex gap-4 mb-6">
+                    {project.showGitHub !== false && (
                     <a
                       href={project.github || '#'}
                       target="_blank"
@@ -104,6 +114,7 @@ export default function Projects() {
                     >
                       GitHub
                     </a>
+                    )}
                     <a
                       href={project.demo || '#'}
                       target="_blank"
