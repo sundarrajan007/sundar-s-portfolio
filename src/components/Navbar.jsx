@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 import { motion } from 'framer-motion'
-import StarBorder from './ui/StarBorder';
 
 const Navbar = () => {
   const [activeSection, setActiveSection] = useState('hero')
@@ -56,7 +55,6 @@ const Navbar = () => {
           : 'top-6 bg-slate-900/80 backdrop-blur-lg border border-orange-500/10 rounded-2xl shadow-2xl'
         }`}
     >
-      <StarBorder />
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
           {/* Navigation Links */}

@@ -16,6 +16,7 @@ import EasterEgg from './components/EasterEgg'
 import Dock from './components/Dock'
 import ShapeBlur from './components/ShapeBlur'
 import Navbar from './components/Navbar'
+import ScrollStack from './components/ui/ScrollStack';
 
 function App() {
   const [showEasterEgg, setShowEasterEgg] = useState(false)
@@ -50,14 +51,16 @@ function App() {
       <ShapeBlur />
       {/* Main Content */}
       <main className="relative z-10">
-        <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
-        <Hero />
-        <About />
-        <Skills />
-        <Projects />
-        <Experience />
-        <Certifications />
-        <Contact />
+        <ScrollStack>
+          <Navbar darkMode={darkMode} setDarkMode={setDarkMode} />
+          <Hero />
+          <About />
+          <Skills />
+          <Projects />
+          <Experience />
+          <Certifications />
+          <Contact />
+        </ScrollStack>
       </main>
       {/* Footer */}
       <Footer />
